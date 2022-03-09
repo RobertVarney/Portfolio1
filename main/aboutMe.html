@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Varney Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../edits/styles1.css" />
+    <link rel="stylesheet" href="../edits/shared.css" />
+</head>
+
+<body class="scroll font">
+    <div id="container">
+        <div class="theSun"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+    </div>
+    <header class='masthead'>
+        <p class='masthead-intro'>Hi I'm</p>
+        <h1 class='masthead-heading'>Robert!</h1>
+    </header>
+    <section class="introduction-section">
+        <h1>Introduction</h1>
+        <p>I am a soon to be software developer.</p>
+        <p>I love the internet and technology.</p>
+    </section>
+    <section class="location-section">
+        <h1>Where I'm From</h1>
+        <p>I'm originally from Gaylord, Michigan. </p>
+    </section>
+    <section class="questions-section">
+        <h1>More About Me</h1>
+        <h2>What are your favorite hobbies?</h2>
+        <p>My favorite hobby is reading, video games, chess, and coding.</p>
+        <h2>What's your dream job?</h2>
+        <p>My dream job is video game development.</p>
+        <h2>Where do you live?</h2>
+        <p>I live in West Palm Beach, Florida soon to be Nashville, Tennessee.</p>
+        <h2>Why do you want to be a web developer?</h2>
+        <p>Because I always loved thinking about what went on behind the curtains and I love problem solving.</p>
+        <p>I am hireable.</p>
+    </section>
+    <footer class="content-footer">
+        <ul class="social">
+            <li><a class="css-is-deranged" href="../edits/NewPortfolio.pdf">Resume</a></li>
+            <li><a class="css-is-deranged" href="https://github.com/RobertVarney">GitHub</a></li>
+            <li><a class="css-is-deranged" href="index.html">Home</a></li>
+        </ul>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" src="../edits/aboutMe.js"></script>
+    <script>
+        const searchQueryURL = 'https://api.github.com/repos/RobertVarney/your_first_code';
+
+        window.addEventListener('DOMContentLoaded', function (e) {
+            return fetch(searchQueryURL)
+                .then(result => result.json())
+                .then(response => console.log(response))
+                .catch(err => console.log(err))
+        });
+    </script>
+</body>
+
+</html>

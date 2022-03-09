@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Varney Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../edits/shared.css" />
+    <link rel="stylesheet" href="../edits/styles.css" />
+</head>
+
+<body class="back-row-toggle splat-toggle scroll font">
+    <div id="root"></div>
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+    <div class="toggles">
+        <div class="splat-toggle toggle
+    active">SPLAT</div>
+        <div class="back-row-toggle toggle
+    active">BACK<br>ROW</div>
+        <div class="single-toggle toggle">SINGLE</div>
+    </div>
+    </div>
+    </div>
+    <div class="text">
+        <header class='masthead'>
+            <p class='masthead-intro'>Robert Varney</p>
+        </header>
+        <section class="introduction-section">
+            <h1>Introduction</h1>
+            <p>I am currently going through the Cooksys program.</p>
+            <p>Where I hope to complete it's course.</p>
+        </section>
+        <section class="location-section">
+            <h1>Where I have worked</h1>
+            <p>I was a Ctyptological Technicial Technician for the Navy.</p>
+        </section>
+        <section class="questions-section">
+            <h2>Past Technicial Experiences</h2>
+            <p>I have made a couple of website's for a college entrance exam.</p>
+            <p>Since then I have taught myself python and html and continued in Web</p>
+            <p>Development.</p>
+            <h2>Proficiency in coding</h2>
+            <p>Entry level with most languages.</p>
+        </section>
+        <div class="my-project"></div>
+    </div>
+    <footer class="content-footer">
+        <ul class="social">
+            <li><a class="css-is-deranged" href="../edits/NewPortfolio.pdf">Resume</a></li>
+            <li><a class="css-is-deranged" href="https://github.com/RobertVarney">GitHub</a></li>
+            <li><a class="css-is-deranged" href="aboutMe.html">About Me</a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" src="../edits/portfolio.js"></script>
+    <script>
+        const searchQueryURL = 'https://api.github.com/repos/RobertVarney/your_first_code';
+
+        window.addEventListener('DOMContentLoaded', function (e) {
+            return fetch(searchQueryURL)
+                .then(result => result.json())
+                .then(response => console.log(response))
+                .catch(err => console.log(err))
+        });
+    </script>
+</body>
+
+</html>

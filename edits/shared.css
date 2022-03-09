@@ -1,0 +1,8 @@
+.scroll {
+    overflow: auto;
+  }
+  
+  .font{
+    font-size: 1.25em;
+    color: #fff;
+  }
